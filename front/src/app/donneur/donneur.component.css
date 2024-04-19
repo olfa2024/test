@@ -1,0 +1,93 @@
+.container {
+    max-width: 500px;
+    /* Largeur maximale du conteneur */
+    margin: 0 auto;
+    /* Centre le conteneur horizontalement */
+    padding: 20px;
+    /* Ajoute un peu d'espace intérieur */
+}
+
+#pg-donation {
+    background-color: #f9f9f9;
+    /* Couleur de fond du formulaire de donation */
+    padding: 20px;
+    /* Ajoute un peu d'espace intérieur */
+    border-radius: 10px;
+    /* Ajoute des coins arrondis */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Ajoute une ombre douce */
+}
+
+.row {
+    margin-bottom: 20px;
+    /* Ajoute un peu d'espace entre les rangées */
+}
+
+.col-lg-6,
+.col-md-6 {
+    /* Aucun style spécifique pour les colonnes */
+}
+.center-button {
+    display: flex;
+    justify-content: center;
+}
+
+.pg-donation__personalinfo,
+.pg-donation__bankinfo {
+    margin-bottom: 30px;
+    /* Ajoute un peu d'espace entre les sections de l'aside */
+}
+
+.pg-dontation__title {
+    font-size: 18px;
+    /* Taille de police pour les titres */
+    margin-bottom: 10px;
+    /* Ajoute un peu d'espace en dessous des titres */
+}
+
+.single-input {
+    margin-bottom: 15px;
+    /* Ajoute un peu d'espace entre les éléments d'entrée unique */
+}
+
+label {
+    display: block;
+    /* Affiche les étiquettes sur une ligne séparée */
+    margin-bottom: 5px;
+    /* Ajoute un peu d'espace en dessous des étiquettes */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+    width: 100%;
+    /* Remplit la largeur de son conteneur */
+    padding: 10px;
+    /* Ajoute un peu de remplissage à l'intérieur des champs */
+    margin-bottom: 10px;
+    /* Ajoute un peu d'espace en dessous des champs */
+    border: 1px solid #ccc;
+    /* Ajoute une bordure */
+    border-radius: 5px;
+    /* Ajoute des coins arrondis */
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    /* Couleur de fond du bouton */
+    color: #fff;
+    /* Couleur du texte du bouton */
+    padding: 10px 20px;
+    /* Ajoute un peu de remplissage au bouton */
+    border: none;
+    /* Supprime la bordure */
+    border-radius: 5px;
+    /* Ajoute des coins arrondis */
+    cursor: pointer;
+    /* Change le curseur au survol */
+}
+
+.payment-cards {
+    /* Aucun style spécifique pour la section des méthodes de paiement */
+}

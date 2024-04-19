@@ -1,0 +1,40 @@
+nav {
+  height: 85px;
+  .navbar-toggler {
+    margin-left: 1rem;
+    &:hover, &:focus{
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  ul .nav-link {
+    color: var(--primary);
+    font-size: 1.1rem;
+    padding: 0.5rem 0.75rem;
+    transition: 0.3s;
+    font-weight: 500;
+    font-family: "ElMessiri", serif;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  nav ul .nav-link {
+    padding: 0.5rem 0.25rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-brand img {
+    max-width: 95px;
+  }
+  #navbarSupportedContent {
+    background-color: var(--blue);
+    z-index: 5000;
+    padding: 25px;
+
+    .nav-link {
+      color: #fff;
+    }
+  }
+}

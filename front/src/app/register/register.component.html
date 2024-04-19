@@ -1,0 +1,57 @@
+<br><br><br><br><br>
+<div class="container">
+  <mat-card class="card">
+    <img
+      class="my-5"
+      width="75"
+      src="assets/account.png"
+      alt="Login"
+    />
+    <mat-card-title class="card-title">تسجيل الدخول</mat-card-title>
+    <mat-card-content class="card-body">
+      <form [formGroup]="registerForm">
+        <div class="form-group">
+          <mat-form-field appearance="outline" class="mb-3">
+            <mat-label class="form-label text-primary-blue font-semibold">الاسم</mat-label>
+            <input formControlName="name" placeholder="الاسم" class="form-control rounded-input" type="text" required />
+            <mat-error *ngIf="registerForm.get('name')?.invalid && registerForm.get('name')?.touched">
+              Please enter a valid user name !
+            </mat-error>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="mb-3">
+            <mat-label class="form-label">البريد الالكتروني</mat-label>
+            <input formControlName="email" placeholder="البريد الالكتروني" class="form-control rounded-input" type="email" required />
+            <mat-error *ngIf="registerForm.get('email')?.invalid && registerForm.get('email')?.touched">
+              Please enter a valid user email !
+            </mat-error>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="mb-3">
+            <mat-label class="form-label">كلمة العبور</mat-label>
+            <input formControlName="password" placeholder="كلمة العبور" type="{{ hidePassword ? 'password' : 'text'}}" class="form-control rounded-input" required />
+            <button mat-icon-button matSuffix (click)="togglePasswordVisibility()" class="btn btn-primary-blue rounded-pill px-4">
+              <mat-icon>{{ hidePassword ? 'visibility_off' : 'visibility' }}</mat-icon>
+            </button>
+            <mat-error *ngIf="registerForm.get('password')?.invalid && registerForm.get('password')?.touched">
+              Please enter a valid user password !
+            </mat-error>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="mb-3">
+            <mat-label class="form-label">تأكيد كلمة العبور</mat-label>
+            <input formControlName="confirmPassword" placeholder="تأكيد كلمة العبور" type="{{ hidePassword ? 'password' : 'text'}}" class="form-control rounded-input large-input" required />
+            <button mat-icon-button matSuffix (click)="togglePasswordVisibility()">
+              <mat-icon>{{ hidePassword ? 'visibility_off' : 'visibility' }}</mat-icon>
+            </button>
+            <mat-error *ngIf="registerForm.get('confirmPassword')?.invalid && registerForm.get('confirmPassword')?.touched">
+              Please enter a valid confirm password !
+            </mat-error>
+          </mat-form-field>
+
+          <button mat-raised-button color="primary" type="submit" [disabled]="registerForm.invalid" (click)="onSubmit()">إرسال</button>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

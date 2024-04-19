@@ -1,0 +1,52 @@
+<div class="container">
+
+
+    <br>
+    <br>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>يوم</th>
+                <th>الهجري</th>
+                <th>الميلادي</th>
+                <th>الامساك</th>
+                <th>الفجر</th>
+            <th>الشروق</th>
+            <th>الظهر</th>
+                <th>العصر</th>
+            <th>المغرب</th>
+            <th>العشاء</th>
+           
+               
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let priere of prieres">
+                    <td>{{ priere['يوم'] }}</td>
+                    <td>{{ priere['الهجري'] }}</td>
+                    <td>{{ priere['الميلادي']}}</td>
+                    <td>{{ priere['الامساك'] }}</td>
+                    <td>{{ priere['الفجر'] }}</td>
+                    <td>{{ priere['الشروق'] }}</td>
+                    <td>{{ priere['الظهر'] }}</td>
+                    <td>{{ priere['العصر'] }}</td>
+                    <td>{{ priere['المغرب'] }}</td>
+                <td>{{ priere['العشاء'] }}</td>
+               
+             
+             
+               
+              
+             
+              
+                
+            
+
+
+
+
+            </tr>
+        </tbody>
+    </table>
+</div>

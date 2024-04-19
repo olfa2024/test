@@ -1,0 +1,59 @@
+.plist a {
+  border: 1px solid #4caf50;
+  padding: 9px 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16pt;
+  width: 99%;
+  overflow: auto;
+  margin: auto;
+  font-family: me_quranR3HOQ;
+  border-radius: 7px;
+}
+a {
+  color: green;
+  text-decoration: none;
+  direction: rtl;
+}
+div {
+  display: block;
+  unicode-bidi: isolate;
+}
+.content, .menu, #search, .tags, .info {
+  border: 1px solid #4caf50;
+  padding: 9px;
+  margin: 11px auto;
+  border-radius: 7px;
+  background: #fff;
+  word-break: break-word;
+}
+audio {
+  width: 97%;
+  border-radius: 7px;
+}
+audio, video, img, iframe {
+  margin: 11px auto;
+  max-width: 99%;
+}
+user agent stylesheet
+audio {
+  width: 300px;
+  height: 54px;
+}
+user agent stylesheet
+center {
+  text-align: -webkit-center;
+}
+.extra, .footer, .content, .menu, #search, .tags, .info {
+  border: 1px solid #4caf50;
+  padding: 9px;
+  margin: 11px auto;
+  border-radius: 7px;
+  background: #fff;
+  word-break: break-word;
+}
+body {
+  font-family: me_quranR3HOQ;
+  font-size: 18px;
+}

@@ -1,0 +1,191 @@
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+
+
+
+.card-title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  padding: -500px;
+}
+
+.mat-card {
+  width: 400px;
+  padding: 20px;
+  text-align: center;
+}
+.card {
+  padding: -1px;
+}
+
+.container img.my-5 {
+  margin-bottom: 30px;
+  display: block;
+  margin: 0 auto;
+}
+
+.mat-card-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.mat-form-field-label {
+  color: #333;
+  font-size: 1rem;
+}
+
+.mat-focused .mat-form-field-label {
+  color: #666;
+}
+
+
+.mat-form-field-invalid .mat-form-field-label {
+  color: #f44336;
+}
+
+mat-form-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+button[type="submit"] {
+  width: 100%;
+}
+
+mat-card-actions {
+  margin-top: 20px;
+}
+
+
+.mat-form-field {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.mat-form-field-wrapper {
+  width: 100%;
+}
+
+.mat-input-element {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+
+.mat-focused .mat-form-field-underline {
+  background-color: #333;
+}
+
+
+.mat-form-field-invalid .mat-input-element {
+  border-color: #f44336;
+}
+
+.mat-form-field-subscript-wrapper {
+  margin-top: 4px;
+}
+
+.mat-error {
+  color: #f44336;
+  font-size: 0.875rem;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+.form-control.rounded-input {
+  border-radius: 10px; /* Adjust the value as needed */
+  border: 1px solid #ccc; /* Example border style */
+  padding: 8px 12px; /* Example padding */
+  /* Add any other styling properties you need */
+}
+
+
+.card-body {
+  text-align: center;
+}
+
+.form-label {
+  font-size: 18px;
+}
+
+
+.rounded-input {
+  border-radius: 20px; /* Adjust the value as needed */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  height: 50px;
+  width: 100%;/* Add border styles as needed */
+}
+
+
+.mat-error {
+  color: red;
+}
+button[type="submit"] {
+  width: 100%;
+}
+.btn-primary-blue {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary-blue:hover {
+  background-color: #0056b3;
+}
+
+.rounded-pill {
+  border-radius: 50px;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.mb-3 {
+  margin-bottom: 15px;
+}
+
+.my-5 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}

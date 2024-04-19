@@ -1,0 +1,21 @@
+#benevolat_wrapper {
+  h5 {
+    text-align: center;
+    color: var(--blue);
+    font-weight: 700;
+    font-family: "ElMessiri", serif !important;
+    font-size: 1.2rem !important;
+  }
+  img{
+    height: 300px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width:992px) {
+  #benevolat_wrapper{
+    img{
+      height: 200px;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+#imsakiya_table{
+  text-align: center;
+  thead th{
+    background-color: var(--blue);
+    color: #fff;
+    text-align: center;
+  }
+}

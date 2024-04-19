@@ -1,0 +1,72 @@
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+
+}
+
+.modal-header h2 {
+  margin: 0;
+  margin: 20px;
+  padding: 20px;
+
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.mat-icon-button {
+  color: #666;
+}
+
+.mat-icon-button:hover {
+  color: #000;
+}
+.youtube-button {
+  background-color: #ff0000; /* Couleur de fond rouge */
+  color: #fff; /* Couleur du texte blanc */
+  padding: 10px 20px; /* Remplissage intérieur */
+  border: none; /* Supprimer la bordure */
+  border-radius: 20px; /* Coins arrondis */
+  font-size: 16px; /* Taille de police */
+  font-weight: bold; /* Gras */
+  cursor: pointer; /* Curseur pointeur au survol */
+  transition: background-color 0.3s ease; /* Transition en douceur de la couleur de fond */
+}
+
+.youtube-button:hover {
+  background-color: #cc0000; /* Couleur de fond rouge foncé au survol */
+}
+
+.youtube-button i {
+  margin-right: 8px; /* Marge à droite de l'icône */
+}
+/* Style pour l'image de la recette */
+img {
+  max-width: 50%; /* Assurez-vous que l'image ne dépasse pas la largeur de son conteneur */
+  height: auto; /* Gardez les proportions de l'image */
+  display: block; /* Éliminez l'espace supplémentaire sous l'image */
+  margin: 0 auto; /* Centrez l'image horizontalement */
+  border-radius: 8px; /* Arrondissez les coins de l'image */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajoutez une ombre légère */
+}
+
+/* Style pour le conteneur de la vidéo */
+.video-container {
+  margin-top: 20px; /* Ajoutez un espace en haut de la vidéo */
+  display: none; /* Cachez la vidéo par défaut */
+}
+
+/* Style pour le bouton YouTube */
+.youtube-button {
+  margin-top: 20px; /* Ajoutez un espace au-dessus du bouton */
+}
+.ytp-impression-link-text {
+  color: white;
+  float: left;
+  font: 500 16px / 16px "YouTube Noto", Roboto, Arial, Helvetica, sans-serif;
+  margin-left: 12px;
+}

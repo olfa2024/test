@@ -1,0 +1,16 @@
+owl-carousel-o {
+  position: relative;
+  img {
+    object-fit: cover;
+    height: 450px;
+  }
+}
+
+
+@media screen and (max-width:767px) {
+  owl-carousel-o{
+    img{
+      height: 350px;
+    }
+  }
+}

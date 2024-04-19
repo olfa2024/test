@@ -1,0 +1,46 @@
+.content-wrap {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.portfolio-item {
+  width: 30%;
+  float: left;
+  margin-bottom: 30px;
+}
+
+.portfolio-image img {
+  width: 100%;
+  height: auto;
+}
+
+.portfolio-title {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.title-ptf a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.title-ptf a:hover {
+  color: #ff0000;
+}
+.portfolio-item {
+  width: 30%;
+  float: left;
+  margin-bottom: 30px;
+  margin-right: 3%; /* Espacement entre les images */
+}
+
+.portfolio-item:nth-child(3n) {
+  margin-right: 0; /* Pour supprimer l'espacement après chaque troisième élément */
+}

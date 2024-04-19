@@ -1,0 +1,50 @@
+<div class="container mt-5">
+  <div class="row" *ngIf="message">
+    <div class="col-12 mb-3">
+      <div class="alert alert-primary d-flex align-items-center" role="alert">
+        <div>
+          {{message}}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8 m-auto card p-md-5 p-3">
+      <h2 class="text-main">Edit Utilisateur</h2>
+
+      <form [formGroup]="editor" (ngSubmit)="updateUtilisateur()" class="py-4">
+        <div class="mb-3">
+          <label for="post-id" class="form-label"> ID: </label>
+          <input id="post-id" type="text" formControlName="postId" class="form-control" [value]="postToEdit.id">
+
+        </div>
+        <div class="mb-3">
+          <label for="post-name" class="form-label"> Name: </label>
+          <input id="post-name" type="text" formControlName="postName" class="form-control">
+
+        </div>
+        <div class="mb-3">
+          <label for="post-email" class="form-label"> Email: </label>
+          <input id="post-email" type="text" formControlName="postEmail" class="form-control">
+
+        </div>
+
+        <div class="mb-3">
+          <label for="post-password" class="form-label"> Password: </label>
+          <input id="post-password" type="text" formControlName="postPassword" class="form-control">
+
+        </div>
+        <div class="mb-3">
+          <label for="post-role" class="form-label"> Role: </label>
+          <input id="post-role" type="text" formControlName="postRole" class="form-control">
+
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary mt-5 w-100">Edit Utilisateur</button>
+        </div>
+
+
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="image-container">
+    <img src="assets/saad-el-ghamidi.png" alt="Description de l'image">
+    <h2>maher-al-mueaqly</h2>
+  </div>
+
+  <div *ngFor="let audioItem of audios" class="audio-item-container">
+    <div class="audio-info">
+      <div class="title-and-progress">
+        <h2>{{ audioItem.title }}</h2>
+        <div class="progress-bar">
+          <div [style.width.%]="progress"></div>
+        </div>
+      </div>
+
+      <audio id="audio" controls [src]="audioItem.audioUrl">
+        Votre navigateur ne prend pas en charge l'élément audio.
+      </audio>
+    </div>
+  </div>
+</div>

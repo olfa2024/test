@@ -1,0 +1,30 @@
+<!-- add-utilisateur.component.html -->
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6 m-auto card p-4">
+      <h2 class="text-main">Nouvel Utilisateur</h2>
+      <form [formGroup]="addUtilisateur" (ngSubmit)="createUser()">
+        <div class="mb-3">
+          <label for="name" class="form-label">Nom:</label>
+          <input id="name" type="text" formControlName="name" class="form-control">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email:</label>
+          <input id="email" type="email" formControlName="email" class="form-control">
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Mot de passe:</label>
+          <input id="password" type="password" formControlName="password" class="form-control">
+        </div>
+        <div class="mb-3">
+          <label for="role" class="form-label">Rôle:</label>
+          <input id="role" type="text" formControlName="role" class="form-control">
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary mt-3 w-100"  >Ajouter Utilisateur</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

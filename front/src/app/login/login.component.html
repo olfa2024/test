@@ -1,0 +1,44 @@
+<div class="container">
+  <mat-card>
+    <img
+      class="my-5"
+      width="75"
+      src="assets/account.png"
+      alt="Login"
+    />
+
+    <mat-card-title class="card-title">تسجيل الدخول</mat-card-title>
+    <mat-card-content>
+      <form [formGroup]="loginForm">
+        <div class="form-group">
+          <mat-form-field appearance="outline">
+            <mat-label>البريد الالكتروني</mat-label>
+            <input  formControlName="email" placeholder="البريد الالكتروني" class="form-control" type="email" required/>
+
+            <mat-error *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched">
+              Please enter a valid user email !
+            </mat-error>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>كلمة العبور</mat-label>
+
+            <input matInput formControlName="password" placeholder="كلمة العبور" type="{{ hidePassword ? 'password' : 'text'}}" required />
+            <button mat-icon-button matSuffix (click)="togglePasswordVisibility()">
+              <mat-icon>{{ hidePassword ? 'visibility_off' : 'visibility' }}</mat-icon>
+            </button>
+            <mat-error *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched">
+              Please enter a valid user password !
+            </mat-error>
+          </mat-form-field>
+          <button mat-raised-button color="primary" type="submit" [disabled]="loginForm.invalid" (click)="onSubmit()">إرسال</button>
+        </div>
+      </form>
+
+
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button color="accent" routerLink="/register"> ليس لديك حساب؟إنشاء حساب.</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

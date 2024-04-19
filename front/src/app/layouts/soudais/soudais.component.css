@@ -1,0 +1,57 @@
+.audio-item-container {
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+.audio-item-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.audio-info {
+  flex: 1;
+}
+
+
+.title-and-progress {
+  display: flex;
+  justify-content: space-around; /* Aligner les éléments sur les côtés */
+  align-items: center;
+  width: 100%; /* Utilisez la largeur totale disponible */
+}
+.image-container img {
+  width: 250px; /* Ajustez la taille de l'image selon vos besoins */
+  height: 250px; /* Ajustez la taille de l'image selon vos besoins */
+  border-radius: 50%; /* Rendre l'image ronde */
+  object-fit: cover; /* Assurez-vous que l'image ne se déforme pas */
+}
+
+
+
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Aligner les éléments à droite */
+}
+
+.image-container img {
+  width:250px; /* Ajustez la taille de l'image selon vos besoins */
+  height: 250px; /* Ajustez la taille de l'image selon vos besoins */
+  border-radius: 50%;
+  margin-top: 200px; /* Rendre l'image ronde */
+}
+
+
+h2 {
+  padding: -10px;
+  margin-top: 30px;
+}
+
+
+

@@ -1,0 +1,24 @@
+<div class="modal-header">
+  <div class="recipe-card">
+    <h2>{{ recipe.titre }}</h2>
+    <button mat-icon-button (click)="close()">
+      <mat-icon aria-label="Close dialog">close</mat-icon>
+    </button>
+  </div>
+</div>
+
+<!-- Div pour afficher l'image de la recette -->
+<div>
+  <img [src]="recipe.imageUrl" alt="Photo of {{ recipe.titre }}">
+</div>
+
+<!-- Paragraphe pour la description de la recette -->
+<p>{{ recipe.description }}</p>
+
+<!-- Bouton pour afficher la vidéo -->
+<button mat-button (click)="openYoutubeVideo()" class="youtube-button">Voir la vidéo</button>
+
+<!-- Conteneur pour la vidéo (initialement caché) -->
+<div *ngIf="showVideo" class="video-container">
+  <iframe width="560" height="315" [src]="recipe.videoUrl" frameborder="0" allowfullscreen></iframe>
+</div>

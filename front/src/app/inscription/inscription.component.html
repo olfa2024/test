@@ -1,0 +1,113 @@
+<div class="container">
+  <div class="col-md-8 col-lg-6 col-xl-4 col-12 py-5 m-auto">
+    <div class="card card-shadow text-center px-4">
+      <form
+        id="loginForm"
+        action="/"
+        method="post"
+        novalidate="novalidate"
+      >
+        <img class="my-5" width="75" src="/assets/imgs/inscrit.png" alt="" />
+        <h4 class="section_header mb-5">تسجيل الدخول</h4>
+        <div class="col-12">
+          <div class="form-group mb-3 text-start">
+            <label
+              class="form-label text-primary-blue font-semibold"
+              for="PhoneNumber"
+              >الاسم</label
+            >
+            <input
+              class="form-control only-number-with-paste"
+              type="text"
+              inputmode="numeric"
+              pattern="\d*"
+              maxlength="10"
+              placeholder=""
+              data-val="true"
+            
+              id="nom"
+              name="nom"
+              value=""
+            />
+          </div>
+
+          <div class="form-group mb-3 text-start">
+            <label
+              class="form-label text-primary-blue font-semibold"
+              for="PhoneNumber"
+              >اللقب</label
+            >
+            <input
+              class="form-control only-number-with-paste"
+              type="text"
+              inputmode="numeric"
+              pattern="\d*"
+              maxlength="10"
+              placeholder=""
+              data-val="true"
+        
+              id="prenom"
+              name="prenom"
+              value=""
+            />
+          </div>
+
+          <div class="form-group mb-3 text-start">
+            <label
+              class="form-label text-primary-blue font-semibold custom-center-label"
+              for="PhoneNumber"
+              >البريد الالكتروني</label
+            >
+
+            <input
+              class="form-control only-number-with-paste"
+              type="text"
+              pattern="\d*"
+              maxlength="10"
+              placeholder=""
+              id="email"
+              name="email"
+              value=""
+            />
+          </div>
+
+          <div class="form-group mb-3 text-start">
+            <label
+              class="form-label text-primary-blue font-semibold"
+              for="PhoneNumber"
+              >كلمة العبور</label
+            >
+            <input
+              class="form-control only-number-with-paste"
+              type="text"
+              inputmode="numeric"
+              pattern="\d*"
+              maxlength="10"
+              placeholder=""
+              data-val="true"
+              id="PhoneNumber"
+              name="PhoneNumber"
+              value=""
+            />
+            <span
+              class="text-danger field-validation-valid"
+              role="alert"
+              data-valmsg-for="PhoneNumber"
+              data-valmsg-replace="true"
+            ></span>
+          </div>
+          <button
+            id="submitBtn"
+            class="btn btn-outline-primary rounded-pill btn-lg w-100 my-4"
+            type="submit"
+            value="OK"
+            
+          >
+            إرسال
+          </button>
+         
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

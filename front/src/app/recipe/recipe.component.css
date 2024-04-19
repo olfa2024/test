@@ -1,0 +1,82 @@
+.recipe-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Centers items horizontally with equal space between them */
+
+
+}
+.social-actions.horizontal a {
+  margin-right: 25px; /* Espacement entre les icônes */
+}
+
+.recipe-card {
+  margin: 20px; /* Provides spacing between cards */
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  display: flex; /* Sets the display property to flex */
+  flex-direction: column; /* Stacks child elements vertically */
+  background: #fff;
+  box-shadow: 0 0 10px 1px #ccc;
+  border-radius: 7px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 576px) {
+  .col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+/* Reset styles */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  direction: rtl; /* Sets text direction to right-to-left */
+}
+
+.mat-card-header {
+  display: flex;
+  align-items: center;
+}
+
+.mat-card-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.mat-card-subtitle {
+  margin-left: 10px;
+  font-size: 14px;
+  color: gray;
+}
+
+.recipe-image {
+  max-width: 100%;
+  height: auto;
+  transition: all .2s ease;
+  height: 150px;
+  position: relative;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.mat-card-content {
+  padding: 10px;
+}
+
+.mat-card-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+button.mat-button {
+  font-size: 16px;
+  color: #333;
+}
