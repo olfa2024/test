@@ -5,15 +5,18 @@ import { DashboardComponent } from "./components/dashboard/dashboard.component";
 import {EditUtilisateurComponent} from "./components/edit-utilisateur/edit-utilisateur.component";
 import {AddUtilisateurComponent} from "./components/add-utilisateur/add-utilisateur.component";
 import {UsersComponent} from "./components/users/users.component";
+import {LoginComponent} from "../login/login.component";
 
 
 const routes: Routes = [
-  { path: '', component: AdminComponent },
-  { path: 'dashboard', component: DashboardComponent},
-  { path: 'edit-utilisateur', component: EditUtilisateurComponent }, // Updated path with parameter
-  { path: 'add-utilisateur', component: AddUtilisateurComponent },
-  { path: 'users', component: UsersComponent },
+  { path: '', component: AdminComponent, children: [
+      { path: 'dashboard', component: DashboardComponent },
+      { path: 'edit-utilisateur', component: EditUtilisateurComponent },
+      { path: 'add-utilisateur', component: AddUtilisateurComponent },
+      { path: 'users', component: UsersComponent },
+      { path: 'login', component: LoginComponent },
 
+    ]}
 ];
 
 @NgModule({

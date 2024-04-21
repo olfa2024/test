@@ -1,0 +1,61 @@
+.left-sidebar {
+  /* Ensure the sidebar is positioned on the left */
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 250px; /* Adjust as needed */
+  /* Add other styles as needed */
+  padding: -5px;
+}
+
+.body-wrapper {
+  /* Ensure the main content starts after the sidebar */
+  margin-left: 250px; /* Adjust based on sidebar width */
+  /* Add other styles as needed */
+}
+/* Style de la barre latérale */
+.left-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px; /* Largeur de la barre latérale */
+  background-color: #ffffff; /* Couleur de fond de la barre latérale */
+  border-right: 1px solid #e0e0e0; /* Bordure de la barre latérale */
+}
+
+/* Style de la liste dans la barre latérale */
+.sidebar-nav ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+/* Style des éléments de la liste dans la barre latérale */
+.sidebar-item {
+  list-style: none;
+}
+
+/* Style des liens dans la barre latérale */
+.sidebar-link {
+  display: block;
+  padding: 10px 20px;
+  color: #333333; /* Couleur du texte du lien */
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+/* Style des liens au survol dans la barre latérale */
+.sidebar-link:hover {
+  background-color: #f5f5f5; /* Couleur de fond au survol */
+}
+
+/* Style des icônes dans la barre latérale */
+.sidebar-link span i {
+  margin-right: 10px;
+}
+
+/* Style du texte du lien au survol */
+.sidebar-link:hover .hide-menu {
+  color: #007bff; /* Couleur du texte au survol */
+}

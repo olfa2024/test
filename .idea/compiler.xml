@@ -6,18 +6,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="prayertime" />
         <module name="authhentification" />
         <module name="quran" />
         <module name="gestionrecettes" />
         <module name="gestion_utilisateur" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="donnation" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="authhentification" options="-parameters" />
       <module name="gestion_utilisateur" options="-parameters" />
       <module name="gestionrecettes" options="-parameters" />
+      <module name="prayertime" options="-parameters" />
       <module name="quran" options="-parameters" />
     </option>
   </component>
